@@ -1,0 +1,19 @@
+<footer class="footer">
+  <small>
+    <%= t "partial.footer.The" %>
+    <%= link_to t("partial.footer.rails"),
+      href="http://www.railstutorial.org/" %>
+    <%= t "parital.footer.by" %>
+    <%= link_to t("partial.footer.micheal"),
+      href="http://www.michaelhartl.com/" %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("partial.footer.about"), about_path %></li>
+      <li><%= link_to t("partial.footer.contact"), contact_path %></li>
+      <li><%= link_to t("partial.footer.news"),
+        href="http://news.railstutorial.org/" %>
+      </li>
+    </ul>
+  </nav>
+</footer>

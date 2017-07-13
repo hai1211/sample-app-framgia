@@ -62,6 +62,9 @@ GEM
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     brakeman (3.7.0)
     builder (3.2.3)
     bundler-audit (0.5.0)
@@ -176,6 +179,10 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.4)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -247,6 +254,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    scss_lint (0.54.0)
+      rake (>= 0.9, < 13)
+      sass (~> 3.4.20)
     scss_lint_reporter_checkstyle (0.2.0)
     sexp_processor (4.9.0)
     shellany (0.0.1)
@@ -310,6 +320,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   better_errors
+  bootstrap-sass (= 3.3.7)
   brakeman
   bundler-audit
   byebug
@@ -325,6 +336,7 @@ DEPENDENCIES
   puma (~> 3.0)
   railroady
   rails (~> 5.0.4)
+  rails-controller-testing
   rails_best_practices
   reek
   rspec
@@ -333,6 +345,7 @@ DEPENDENCIES
   rubocop (~> 0.35.0)
   rubocop-checkstyle_formatter
   sass-rails (~> 5.0)
+  scss_lint
   scss_lint_reporter_checkstyle
   shoulda-matchers
   simplecov
