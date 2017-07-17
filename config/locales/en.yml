@@ -20,6 +20,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  user:
+    welcome: "Welcome to the Sample App"
+    new:
+      signup: "Sign Up"
+      confirm: "Confirmation"
+      create: "Create my account"
+    show:
+      not_exist: "User is not exist."
+  error:
+    the_form: "The form contains"
+    error: "error"
   home:
     title: "Home"
     header: "Welcome to the Sample App"
