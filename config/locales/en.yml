@@ -31,6 +31,7 @@ en:
   error:
     the_form: "The form contains"
     error: "error"
+    login_failt: "Invalid email/password combination"
   home:
     title: "Home"
     header: "Welcome to the Sample App"
@@ -67,12 +68,23 @@ en:
     title: "Sign Up"
     header: "Sign Up"
     content: "This will be a signup page for new users."
+  session:
+    title: "Login"
+    header: "Login"
+    login: "Login"
+    signup: "Sign up now!"
+    new_user: "New user?"
   partial:
     header:
       sample_app: "sample app"
       home: "Home"
       help: "Help"
       login: "Login"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      setting: "Setting"
+      logout: "Log out"
     footer:
       intro: |
         The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
