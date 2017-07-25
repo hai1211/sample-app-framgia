@@ -74,6 +74,7 @@ en:
     login: "Login"
     signup: "Sign up now!"
     new_user: "New user?"
+    remember: "Remember me on this computer"
   partial:
     header:
       sample_app: "sample app"
