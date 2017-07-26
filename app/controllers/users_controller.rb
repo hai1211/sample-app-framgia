@@ -10,21 +10,21 @@ class UsersController < ApplicationController
 
   public
 
-  def new
-    @user = User.new
+  def index
+    @users = User.active.paginate page: params[:page]
   end
 
-  def index
-    @users = User.paginate page: params[:page]
+  def new
+    @user = User.new
   end
 
   def create
     @user = User.new user_params
 
     if user.save
-      log_in user
-      flash[:success] = t "user.flash.create.success"
-      redirect_to user
+      user.send_activation_email
+      flash[:info] = t "user.flash.create.success"
+      redirect_to root_url
     else
       render :new
     end
@@ -73,7 +73,7 @@ class UsersController < ApplicationController
   end
 
   def find_user
-    @user = User.find_by id: params[:id]
+    @user = User.find_by id: params[:id], activated: true
 
     return if user
     flash[:danger] = t "user.flash.filter.find_user"
