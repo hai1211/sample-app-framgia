@@ -1,0 +1,13 @@
+<h1><%= t "mail.activation.header" %></h1>
+
+<p>
+  <%= t "mail.activation.greeting" %><%= @user.name %>
+  <%= t "mail.activation.comma" %>
+</p>
+
+<p>
+  <%= t "mail.activation.content" %>
+</p>
+
+<%= link_to t("mail.activation.link"),
+  edit_account_activation_url(@user.activation_token, email: @user.email) %>

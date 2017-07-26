@@ -36,7 +36,7 @@ en:
       update:
         success: "Profile updated"
       create:
-        success: "Welcome to the Sample App"
+        success: "Please check your email to activate your account."
         error: "Invalid email/password combination"
       destroy:
         success: "User deleted"
@@ -118,3 +118,17 @@ en:
     user:
       delete: "delete"
       confirm: You sure?"
+  flash:
+    activation:
+      success: "Account activated!"
+      invalid_link: "Invalid activation link"
+      not_active: "Account not activated.
+        Check your email for the activation link."
+  mail:
+    activation:
+      content: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      comma: ","
+      greeting: "Hi "
+      header: "Sample App"
+      link: "Activate"
