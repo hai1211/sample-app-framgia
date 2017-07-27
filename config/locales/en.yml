@@ -93,6 +93,7 @@ en:
     signup: "Sign up now!"
     new_user: "New user?"
     remember: "Remember me on this computer"
+    forgot_pwd: "(forgot password)"
   partial:
     header:
       sample_app: "sample app"
@@ -124,11 +125,38 @@ en:
       invalid_link: "Invalid activation link"
       not_active: "Account not activated.
         Check your email for the activation link."
+    pwd_reset:
+      create:
+        success: "Email sent with password reset instructions"
+        email_not_found: "Email address not found"
+      update:
+        empty_pwd: "can't be empty"
+        success: "Password has been reset."
+      expired: "Password reset has expired."
   mail:
     activation:
+      title: "Account activation"
       content: "Welcome to the Sample App!
         Click on the link below to activate your account:"
       comma: ","
       greeting: "Hi "
       header: "Sample App"
       link: "Activate"
+    pwd_reset:
+      title: "Password Reset"
+      header: "Password reset"
+      instructions: "To reset your password click the link below:"
+      expire: "This link will expire in two hours."
+      warning: "If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is."
+      link: "Reset password"
+  pwd_reset:
+    new:
+      title: "Forgot password"
+      header: "Forgot password"
+      submit_btn: "Submit"
+    edit:
+      title: "Reset password"
+      header: "Reset password"
+      confirm: "Confirmation"
+      submit_btn: "Update password"
