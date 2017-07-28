@@ -1,0 +1,5 @@
+micropost:
+  max_length: 140
+picture:
+  max_size: <%= 5.megabytes %>
+  resize: [400, 400]

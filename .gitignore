@@ -26,3 +26,12 @@
 /config/local_env.yml
 /.framgia-ci-reports
 /.framgia-ci-result.temp.yml
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+config/settings
+config/settings.local.yml
+
+public/javascripts/i18n.js
+public/javascripts/translations.js
