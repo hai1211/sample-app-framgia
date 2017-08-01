@@ -43,6 +43,8 @@ en:
       filter:
         logged_in: "Please log in."
         find_user: "User is not exist."
+    show:
+      microposts: "Microposts"
     index:
       title: "All users"
       header: "All users"
@@ -59,6 +61,7 @@ en:
     signup: "Sign up now"
     rails_logo: "Rails logo"
     kitten_logo: "Kitten picture"
+    feed: "Micropost Feed"
   contact:
     title: "Contact"
     content: "Contact the Ruby on Rails Tutorial about the sample app at the"
@@ -119,6 +122,17 @@ en:
     user:
       delete: "delete"
       confirm: You sure?"
+    user_info:
+      link: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      text_area: "Compose new micropost..."
+      submit_btn: "Post"
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+      link: "delete"
+      confirm: "You sure?"
   flash:
     activation:
       success: "Account activated!"
@@ -133,6 +147,11 @@ en:
         empty_pwd: "can't be empty"
         success: "Password has been reset."
       expired: "Password reset has expired."
+    micropost:
+      create:
+        success: "Micropost created!"
+      delete:
+        success: "Micropost deleted"
   mail:
     activation:
       title: "Account activation"
@@ -160,3 +179,6 @@ en:
       header: "Reset password"
       confirm: "Confirmation"
       submit_btn: "Update password"
+  message:
+    pic_size: "should be less than 5MB"
+    file_too_big: "Maximum file size is 5MB. Please choose a smaller file."
