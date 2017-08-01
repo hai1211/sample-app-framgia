@@ -3,3 +3,8 @@ micropost:
 picture:
   max_size: <%= 5.megabytes %>
   resize: [400, 400]
+  show_follow:
+    size: 30
+mail:
+  reset:
+    expire_time: <%= 2.hours.ago %>

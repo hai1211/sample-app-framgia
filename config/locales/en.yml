@@ -48,6 +48,12 @@ en:
     index:
       title: "All users"
       header: "All users"
+    follow:
+      following:
+        title: "Following"
+      follower:
+        title: "Followers"
+      microposts: "Microposts:"
   error:
     the_form: "The form contains"
     error: "error"
@@ -123,7 +129,7 @@ en:
       delete: "delete"
       confirm: You sure?"
     user_info:
-      link: "view my profile"
+      link: "View my profile"
       micropost: "micropost"
     micropost_form:
       text_area: "Compose new micropost..."
@@ -133,6 +139,13 @@ en:
       ago: "ago."
       link: "delete"
       confirm: "You sure?"
+    stats:
+      following: "following"
+      followers: "followers"
+    follow:
+      btn: "Follow"
+    unfollow:
+      btn: "Unfollow"
   flash:
     activation:
       success: "Account activated!"
