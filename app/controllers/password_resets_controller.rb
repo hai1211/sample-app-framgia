@@ -49,7 +49,7 @@ class PasswordResetsController < ApplicationController
   end
 
   def check_expiration
-    return unless user.password_reset_expired?
+    return unless user.reset_sent_at < Settings.mail.reset.expire_time
     flash[:danger] = t "flash.pwd_reset.expired"
     redirect_to new_password_reset_url
   end
